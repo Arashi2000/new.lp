@@ -1,7 +1,7 @@
 <template>
   <div id="app">
+    <div id="firstview">
     <CommonHeader></CommonHeader>
-    <main>
     <p class="catchcopy">機械ではできない仕事を</p>
       <div class="news flex">
         <div class="news-content">
@@ -12,8 +12,9 @@
         </div>
         <div class="news-icon">news</div>
       </div>
-    </div>
-    <main>
+      </div>
+      
+      <main>
       <div class="mission">
         <div class="mission-content">
           <h2 class="mission_title">
@@ -25,14 +26,14 @@
           <a href="" class="common-btn mission-btn">ミッション詳細</a>
         </div>
         <div class="mission-img">
-          <img src="img/mission-img.jpg" alt="" />
+          <img src="./assets/img/mission-img.jpg" alt="" />
         </div>
       </div>
       <div class="service">
         <h2 class="service-title section-title">service</h2>
         <div class="service-content">
           <div class="service-img">
-            <img src="img/service2.jpg" alt="" />
+            <img src="./assets/img/service2.jpg" alt="" />
           </div>
           <div class="service-content_inner">
             <h3 class="mgb-15">web制作事業</h3>
@@ -45,7 +46,7 @@
         </div>
         <div class="service-content">
           <div class="service-img service-img_second">
-            <img src="img/service1.jpg" alt="" />
+            <img src="./assets/img/service1.jpg" alt="" />
           </div>
           <div class="service-content_inner service-content_inner-second">
             <h3 class="mgb-15">web制作事業</h3>
@@ -88,8 +89,8 @@
         <a href="" class="common-btn contact-btn">お問い合わせへ</a>
       </div>
       </main>
-    <CommonFooter></CommonFooter>
-  </div>
+    <CommonFooter> </CommonFooter>
+    </div>
 </template>
 
 <script>
@@ -104,99 +105,234 @@ export default {
 </script>
 
 <style>
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-  line-height:1;
+  line-height: 1.6;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-  display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 nav ul {
-  list-style:none;
+  list-style: none;
 }
 
-blockquote, q {
-  quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content:'';
-  content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 a {
-  margin:0;
-  padding:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-  background-color:#ff9;
-  color:#000;
-  text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-  background-color:#ff9;
-  color:#000;
-  font-style:italic;
-  font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
   text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-  border-bottom:1px dotted;
-  cursor:help;
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-  border-collapse:collapse;
-  border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-  display:block;
-  height:1px;
-  border:0;
-  border-top:1px solid #cccccc;
-  margin:1em 0;
-  padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-input, select {
-  vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
+}
+
+/*------------------------*/
+/* 共通のスタイル*/
+/*------------------------*/
+html {
+  height: 100%;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  color: #333333;
+  height: 100%;
+}
+
+.mgb-15 {
+  margin-bottom: 15px;
+}
+
+.common-btn {
+  display: block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding: 0 20px;
+  color: #000;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.section-title span {
+  font-size: 20px;
 }
 
 #firstview {
@@ -227,6 +363,7 @@ input, select {
   right: 0;
   width: 50%;
 }
+
 .news-content {
   background: #fff;
   width: 80%;
@@ -419,22 +556,25 @@ input, select {
   color: #fff;
 }
 
-.recruit-img {
-    background: url(assets/img/recruit.jpg) center/cover no-repeat;
-  }
+.footer-bar {
+  height: 70px;
+  line-height: 70px;
+}
 
-  .faq-title {
-    font-size: 30px;
-    width: 10%;
-  }
-  
-  .faq-title-jp {
-    font-size: 20px;
-    width: 80%;
-    text-align: center;
-  }
+.top-footer {
+  background: #000;
+  text-align: center;
+}
+
+.top-footer small {
+  text-align: center;
+  color: #fff;
+}
 
 
+.footer-logo {
+  color: #fff;
+}
 
 @media screen and (max-width: 768px) {
   #hamburger {
@@ -537,5 +677,28 @@ input, select {
   .company-img {
     background: url(assets/img/company.jpeg) center/cover no-repeat;
   }
+  
+  .recruit-img {
+    background: url(assets/img/recruit.jpg) center/cover no-repeat;
+  }
+
+  .faq-title {
+    font-size: 30px;
+    width: 10%;
+  }
+  
+  .faq-title-jp {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+  }
+
+
 }
   </style>
